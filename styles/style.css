@@ -1,0 +1,56 @@
+@charset "UTF-8";
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+/*******************************
+ *   All above is CSS reset    *
+ *******************************/
+html {
+  font-size: 1em;
+  font-family: Lato; }
+
+.header {
+  background-color: #323232;
+  color: #e0e0e0;
+  height: 7vh; }
+
+.menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase; }
+  .menu__logo {
+    background-image: url("/../images/logo.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    width: 65px;
+    height: 55px;
+    margin: 0 30px; }
+    .menu__logo:before, .menu__logo:after {
+      content: "";
+      position: absolute;
+      left: -1.65rem;
+      width: 0;
+      border-left: 60px solid transparent;
+      border-right: 60px solid transparent; }
+    .menu__logo:after {
+      top: 100%;
+      border-top: 34px solid #323232; }
+  .menu__left-item, .menu__right-item {
+    margin-right: 15px; }
+  .menu__right-item + .menu__right-item::before, .menu__left-item + .menu__left-item::before {
+    padding-right: 15px;
+    content: "•";
+    font-size: .2rem;
+    vertical-align: middle; }
+  .menu a {
+    text-decoration: none;
+    color: inherit; }
+  .menu .active {
+    color: #2eb398; }

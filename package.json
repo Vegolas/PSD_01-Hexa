@@ -1,0 +1,14 @@
+{
+  "name": "psd_01",
+  "version": "1.0.0",
+  "description": "My first psd2html playground",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/main.scss styles/style.css -w"
+  },
+  "author": "MT",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
