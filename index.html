@@ -9,17 +9,34 @@
     <title>PSD Practice 01</title>
 </head>
 <body>
-    <div class="header">
-        <ul class="menu" role="navigation">
-            <li class="menu__left-item active"><a href="#">Portfolio</a></li>
-            <li class="menu__left-item"><a href="#">About</a></li>
+    <nav class="header">
+        <ul class="menu" role="navigation" id="menu">
+            <li class="menu__item left active"><a href="#">Portfolio</a></li>
+            <li class="menu__item left"><a href="#">About</a></li>
             <li class="menu__logo"></li>
-            <li class="menu__right-item"><a href="#">Blog</a></li>
-            <li class="menu__right-item"><a href="#">Get in touch</a></li>
+            <li class="menu__item right"><a href="#">Blog</a></li>
+            <li class="menu__item right"><a href="#">Get in touch</a></li>
         </ul>
-    </div>
+    </nav>
     <div class="portfolio"></div>
     <div class="about"> </div>
     <div class="footer"></div>
+    <script>
+    var btnContainer = document.getElementById("menu");
+    console.log(btnContainer);
+    
+    // Get all buttons with class="btn" inside the container
+    var btns = btnContainer.getElementsByClassName("menu__item");
+    
+    // Loop through the buttons and add the active class to the current/clicked button
+    console.log(btns);
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+        });
+    }     
+    </script>
 </body>
 </html>

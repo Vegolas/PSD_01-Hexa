@@ -14,7 +14,7 @@ html {
 .header {
   background-color: #323232;
   color: #e0e0e0;
-  height: 7vh; }
+  height: 60px; }
 
 .menu {
   width: 100%;
@@ -31,7 +31,8 @@ html {
     position: relative;
     width: 65px;
     height: 55px;
-    margin: 0 30px; }
+    margin: 0 30px;
+    margin-top: 10px; }
     .menu__logo:before, .menu__logo:after {
       content: "";
       position: absolute;
@@ -40,17 +41,24 @@ html {
       border-left: 60px solid transparent;
       border-right: 60px solid transparent; }
     .menu__logo:after {
-      top: 100%;
-      border-top: 34px solid #323232; }
-  .menu__left-item, .menu__right-item {
+      top: 96%;
+      border-top: 30px solid #323232; }
+  .menu .left {
+    margin-left: 15px; }
+  .menu .right {
     margin-right: 15px; }
-  .menu__right-item + .menu__right-item::before, .menu__left-item + .menu__left-item::before {
+  .menu__item + .menu__item::before {
     padding-right: 15px;
     content: "•";
-    font-size: .2rem;
-    vertical-align: middle; }
+    font-size: .3rem;
+    vertical-align: middle;
+    color: #e0e0e0; }
   .menu a {
     text-decoration: none;
     color: inherit; }
   .menu .active {
     color: #2eb398; }
+
+.portfolio {
+  height: 93vh;
+  background-color: #2eb398; }

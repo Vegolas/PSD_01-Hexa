@@ -20,7 +20,7 @@ html {
  .header {
      background-color: $color-background-main;
      color: $color-foreground-main;
-     height: 7vh;
+     height: 60px;
  }
 
  .menu
@@ -41,6 +41,7 @@ html {
         width: 65px; 
         height: 55px;
         margin: 0 30px;
+        margin-top: 10px;
            
         &:before,&:after {
             content: "";
@@ -52,20 +53,24 @@ html {
         }
     
         &:after {
-            top: 100%;
-            border-top: 34px solid $color-background-main;
+            top: 96%;
+            border-top: 30px solid $color-background-main;
         }
     }
 
-    &__left-item, &__right-item{
-        margin-right: 15px;
+    .left{
+        margin-left: 15px;
     }
 
-    &__right-item + &__right-item::before, &__left-item + &__left-item::before {
+    .right{
+        margin-right: 15px;
+    }
+    &__item + &__item::before{
         padding-right:15px;
         content: "•";
-        font-size: .2rem;
+        font-size: .3rem;
         vertical-align: middle;
+        color: $color-foreground-main;
     }
     
     a {
@@ -76,6 +81,13 @@ html {
     .active {
         color: $color-green-main;
     }
+   
+    &::before{
+
+    }
  }
 
- 
+ .portfolio {
+     height: 93vh;
+     background-color: $color-green-main;
+ }
