@@ -32,16 +32,16 @@ html {
     width: 65px;
     height: 55px;
     margin: 0 30px;
-    margin-top: 10px; }
+    margin-top: 5px; }
     .menu__logo:before, .menu__logo:after {
       content: "";
       position: absolute;
-      left: -1.65rem;
+      left: -1.5rem;
       width: 0;
       border-left: 60px solid transparent;
       border-right: 60px solid transparent; }
     .menu__logo:after {
-      top: 96%;
+      top: 100%;
       border-top: 30px solid #323232; }
   .menu .left {
     margin-left: 15px; }
@@ -60,4 +60,26 @@ html {
     color: #2eb398; }
 
 .portfolio {
+  height: 85vh;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center; }
+  .portfolio__outer-row {
+    display: flex;
+    width: 100%;
+    justify-content: center; }
+  .portfolio__middle-row {
+    margin-top: -40px;
+    margin-bottom: -40px;
+    display: flex;
+    width: 100%;
+    justify-content: center; }
+  .portfolio .image {
+    margin-left: 5px;
+    margin-right: 5px; }
+
+.about {
+  height: 93vh;
   background-color: #2eb398; }
